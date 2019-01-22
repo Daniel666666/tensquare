@@ -1,0 +1,46 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: tensquare-manage
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    ip-address: true
+zuul:
+  routes:
+    tensquare-base:
+      path: /label/**
+      serviceId: tensquare-base
+    tensquare-article:
+      path: /article/**
+      serviceId: tensquare-article
+    tensquare-friend:
+      path: /friend/**
+      serviceId: tensquare-friend
+    tensquare-gathering:
+      path: /gathering/**
+      serviceId: tensquare-gathering
+    tensquare-qa:
+      path: /qa/**
+      serviceId: tensquare-qa
+    tensquare-recruit:
+      path: /recruit/**
+      serviceId: tensquare-recruit
+    tensquare-search:
+      path: /search/**
+      serviceId: tensquare-search
+    tensquare-sms:
+      path: /sms/**
+      serviceId: tensquare-sms
+    tensquare-spit:
+      path: /spit/**
+      serviceId: tensquare-spit
+    tensquare-user:
+      path: /user/**
+      serviceId: tensquare-user
+jwt:
+  config:
+    key: daniel
