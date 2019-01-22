@@ -103,7 +103,6 @@ public class ArticleService {
 		articleDao.save(article);
 		redisTemplate.opsForValue().set("article_"+article.getId(),article,1,TimeUnit.DAYS);
 	}
-
 	/**
 	 * 修改
 	 * @param article

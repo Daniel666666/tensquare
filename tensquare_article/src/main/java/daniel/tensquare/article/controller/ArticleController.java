@@ -1,5 +1,4 @@
 package daniel.tensquare.article.controller;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +28,6 @@ public class ArticleController {
 
 	@Autowired
 	private ArticleService articleService;
-	
-	
 	/**
 	 * 查询全部数据
 	 * @return
