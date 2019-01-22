@@ -1,6 +1,5 @@
 package daniel.tensquare.spit.Service;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import daniel.tensquare.spit.Dao.SpitDao;
 import daniel.tensquare.spit.Pojo.Spit;
 import org.springframework.beans.factory.annotation.Autowired;
