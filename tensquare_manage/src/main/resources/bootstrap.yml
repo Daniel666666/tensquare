@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: manage
+      profile: dev
+      label: master
+      uri: http://192.168.109.128:12000
